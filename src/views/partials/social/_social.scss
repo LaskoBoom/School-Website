@@ -1,3 +1,8 @@
 .social {
-    color: green;
+    color: white;
+
+    &__nav {
+        display: flex;
+        gap: 24px;
+    }
 }
