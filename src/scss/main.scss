@@ -1,3 +1,5 @@
-*{
-    background: pink;
-}
+@use "lib";
+
+@use "../views/partials/footer/footer";
+@use "../views/partials/social/social";
+@use "../views/partials/subscribe/subscribe";
