@@ -1,0 +1,180 @@
+.cta {
+    display: flex;
+    background-image: url('/public/cta.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    position: relative;
+
+    @media (min-width: 992px) {
+        background-image: url('/public/ctadesktopphoto.svg');
+        margin-top: 72px;
+        // @todo: test later with other components
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXBzZjBmOGZvMGd6dWMybXJ1dHF6cTUweDBxeHA4N3prdzluNzd1NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lbcLMX9B6sTsGjUmS3/giphy.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        opacity: 0.3;
+    }
+
+    &__layout {
+        padding-bottom: 70px;
+        padding-top: 69px;
+
+        @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 0 32px;
+            padding: 0;
+        }
+    }
+
+    &__title {
+        margin-left: 19px;
+        margin-right: 15px;
+        font-size: 24px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+
+        @media (min-width: 992px) {
+            grid-column: 5 / 13;
+            text-align: left;
+            font-size: 42px;
+            padding-top: 42px;
+            padding-bottom: 24px;
+            margin-left: -16px;
+            padding-left: 0;
+            margin-right: 0;
+            padding-right: 0;  
+        }
+
+        @media (min-width: 1170px) {
+            grid-column: 7 / 13;
+        }
+    }
+
+    &__description {
+        padding-top: 24px;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+        text-align: center;
+        color: white;
+
+        @media (min-width: 430px) {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        @media (min-width: 992px) {
+            grid-column: 5 / 12;
+            text-align: left;
+            font-size: 24px;
+            font-weight: normal;
+            padding-bottom: 89px;
+            padding-top: 0;
+            padding-left: 0;
+            margin-left: -16px;
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+        @media (min-width: 1170px) {
+            grid-column: 7 / 13;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        padding-top: 64px;
+        margin-left: 14px;
+        margin-right: 14px;
+
+        @media (min-width: 430px) {
+            flex-wrap: nowrap;
+        }
+
+        @media (min-width: 992px) {
+            grid-column: 5 / 13;
+            padding: 0;
+            margin: 0;
+            justify-content: start;
+            gap: 31px;
+            padding-bottom: 76px;
+            margin-left: -16px;
+        }
+
+        @media (min-width: 1170px) {
+            grid-column: 7 / 13;
+        }
+    }
+
+    &__btn-primary {
+        height: 60px;
+        width: 162px;
+        background-color: #09B451;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        border-radius: 8px;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+        &:hover {
+        background-color: white;
+        color: #09B451;
+        }
+    }
+
+    &__btn-secondary {
+        height: 60px;
+        width: 162px;
+        background-color: #E7FAEF;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #09B451;
+        border: 1px solid #09B451;
+        border-radius: 8px;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: #09B451;
+            color: #E7FAEF;
+        }
+    }
+
+    &__media {
+        display: none;
+
+        @media (min-width: 992px) {
+            display: block;
+            grid-column: 1 / 5;
+            grid-row: 1 / 4;
+            margin-top: -57px;
+            padding-bottom: 72px;
+            padding-top: 15px;
+        }
+
+        @media (min-width: 1170px) {
+            grid-column: 1 / 7;
+        }
+    }
+}
