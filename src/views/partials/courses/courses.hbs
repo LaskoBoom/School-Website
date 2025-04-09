@@ -1,0 +1,26 @@
+<div class="courses">
+    
+    <div class="container">
+        
+        <h2 class="courses__title">Most popular courses</h2>
+            
+        <div class="courses__list">
+                
+            {{#each courses}}
+
+                {{> course-card/course-card
+                    title=this.title
+                    image=this.image
+                    rating=this.rating
+                    length=this.length
+                    students=this.students
+                    price=this.price
+                }}
+
+            {{/each}}
+            
+        </div>
+
+    </div>
+
+</div>

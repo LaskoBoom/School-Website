@@ -1,4 +1,54 @@
 {
-    "title": "Homepage 1",
-    "content": "My Homepage Content!"
+    "title": "Homepage",
+    "content": "My Homepage Content!",
+    "courses": [
+        {
+            "title": "Learn Marketing From Top Instructors",
+            "image": "/desktop-photo-01.jpg",
+            "rating": "4.5",
+            "length": "6 weeks" ,
+            "students": "1.5k students",
+            "price": "30.5$"
+        },
+        {
+            "title": "Front-End Development Is Not Hard As You Think",
+            "image": "/desktop-photo-02.jpg",
+            "rating": "4.3",
+            "length": "8 weeks" ,
+            "students": "1.5k students",
+            "price": "30.5$"
+        },
+        {
+            "title": "Everything You Need To Know In UX",
+            "image": "/desktop-photo-03.jpg",
+            "rating": "4.3",
+            "length": "8 weeks" ,
+            "students": "1.5k students",
+            "price": "30.5$"
+        },
+        {
+            "title": "Learn Photography With Ease",
+            "image": "/desktop-photo-04.jpg",
+            "rating": "4.3",
+            "length": "8 weeks" ,
+            "students": "1.5k students",
+            "price": "30.5$"
+        },
+        {
+            "title": "Be A Pro In Data Analysis",
+            "image": "/desktop-photo-05.jpg",
+            "rating": "4.3",
+            "length": "8 weeks" ,
+            "students": "1.5k students",
+            "price": "30.5$"
+        },
+        {
+            "title": "Ethical Hacking Is Not As Hard As You Think",
+            "image": "/desktop-photo-06.jpg",
+            "rating": "4.3",
+            "length": "8 weeks" ,
+            "students": "1.5k students",
+            "price": "30.5$"
+        }
+    ]
 }

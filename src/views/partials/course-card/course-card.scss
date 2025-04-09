@@ -1,0 +1,155 @@
+.course-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(#CBCBCB, 0.25);
+
+    @media (min-width: 992px) {
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-28px);
+        }
+    }
+
+    &__image {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+        @media (min-width: 992px) {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+    }
+
+    &__title {
+        font-family: 'poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        padding-right: 38px;
+        padding-top: 2px;
+        padding-left: 13px;
+
+        @media (min-width: 992px) {
+            font-size: 24px;
+            padding-left: 24px;
+            padding-right: 73px;
+            padding-top: 24px;
+        }
+    }
+
+    &__rating {
+        display: flex;
+        position: absolute;
+        width: 24px;
+        top: 8px;
+        right: 12px;
+        gap: 4px;
+
+        @media (min-width: 992px) {
+            width: 48px;
+            top: 32px;
+            right: 24px;
+            gap: 6px;
+        }
+    }
+
+    &__rating-number {
+        font-family: 'poppins', sans-serif;
+        font-size: 8px;
+        font-weight: 400;
+        display: inline-block;
+        line-height: normal;
+        vertical-align: middle;
+        padding: 1px;
+
+        @media (min-width: 992px) {
+            font-size: 16px;
+            padding: 0;
+        }
+    }
+
+    &__star {
+        padding-top: 2px;
+        padding-bottom: 2px;
+
+        @media (min-width: 992px) {
+            width: 18px;
+            height: 18px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+    }
+
+    &__price {
+        display: flex;
+        width: 39px;
+        height: 21px;
+        font-family: 'poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #09B451;
+        padding-top: 4px;
+        padding-left: 14px;
+
+        @media (min-width: 992px) {
+            position: absolute;
+            width: 68px;
+            height: 36px;
+            top: 347px;
+            right: 24px;
+            font-size: 24px;
+            font-weight: 600;
+            padding: 0;
+        }
+    }
+
+    &__students {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: 'poppins', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        padding-top: 12px;
+        padding-left: 16px;
+        padding-bottom: 9px;
+        margin-top: auto;
+
+        @media (min-width: 992px) {
+            font-size: 16px;
+            font-weight: 500;
+            padding-left: 24px;
+            padding-top: 42px;
+            padding-bottom: 28px;
+            gap: 16px;
+        }
+    }
+
+    &__icon {
+        @media (min-width: 992px) {
+            width: 16px;
+            height: 16px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+    }
+
+    &__length {
+        font-family: 'poppins', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+
+        @media (min-width: 992px) {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
